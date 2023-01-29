@@ -14,7 +14,7 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
   return (
     <>
       <Page
-        title="Home of Dxrery Networks"
+        title="Home"
         description={
           <>
             <p>

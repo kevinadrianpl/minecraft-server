@@ -2,7 +2,7 @@ import type { SiteConfig } from "@/lib/types";
 const siteConfig: SiteConfig = {
   avatar: "/avatar.png",
   siteUrl: "https://vercel-nine-pink.vercel.app/",
-  siteName: "Dxrery",
+  siteName: "Dxrery Networks",
   siteDescription:
     "Dxrery Networks is a Minecraft Towny server with custom rpg-like features and time-based ranks.",
   siteThumbnail: "/og-image.png",
