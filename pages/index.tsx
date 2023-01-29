@@ -18,8 +18,9 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
         description={
           <>
             <p>
-              View the source code on{" "}
-              <a href="https://github.com/alexcarpenter/nextjs-mdx-blog-theme">
+              Dxrery Networks is a Minecraft Towny server with custom rpg-like features and time-based ranks.
+              We are mostly a South African community although the server is hosted in EU, we have players from all over the world. Join our Discord.{" "}
+              <a href="https://discord.gg/Ubx7Tvu">
                 Github
               </a>
               .
