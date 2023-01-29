@@ -6,7 +6,7 @@ const About: NextPage = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('https://example.com');
+    router.push('https://dxrery.co.za/map/');
   }, []);
 
   return <div>Redirecting...</div>;
