@@ -10,6 +10,7 @@ const siteConfig: SiteConfig = {
     { label: "Posts", href: "/posts" },
     { label: "Map", href: "/map" },
     { label: "About", href: "/about" },
+    { label: "Store", href: "/store" },
   ],
 };
 export default siteConfig;
