@@ -14,14 +14,14 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
   return (
     <>
       <Page
-        title="Next.js MDX Blog Theme"
+        title="Dxrery Networks"
         description={
           <>
             <p>
               Dxrery Networks is a Minecraft Towny server with custom rpg-like features and time-based ranks.
-              We are mostly a South African community although the server is hosted in EU, we have players from all over the world. Join our Discord.{" "}
+              We are mostly a South African community although the server is hosted in EU, we have players from all over the world. Join our {" "}
               <a href="https://discord.gg/Ubx7Tvu">
-                Github
+                Discord
               </a>
               .
             </p>
