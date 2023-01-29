@@ -22,10 +22,6 @@ export const Footer: React.FC = () => {
                   )}
                   title={key}
                 >
-                  {SOCIAL_ICONS[key]}
-                </a>
-              </li>
-            );
           })}
         </ul>
       ) : null}
