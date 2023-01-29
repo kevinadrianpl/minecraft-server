@@ -11,9 +11,5 @@ const siteConfig: SiteConfig = {
     { label: "Map", href: "/map" },
     { label: "About", href: "/about" },
   ],
-  social: {
-    discord: "https://discord.gg/Ubx7Tvu",
-    twitter: "https://twitter.com/hyrbid_alex",
-  },
 };
 export default siteConfig;
