@@ -14,8 +14,6 @@ const siteConfig: SiteConfig = {
   social: {
     discord: "https://discord.gg/Ubx7Tvu",
     twitter: "https://twitter.com/hyrbid_alex",
-    linkedin: "https://www.linkedin.com/in/imalexcarpenter/",
-    instagram: "https://www.instagram.com/alexcarp/",
   },
 };
 export default siteConfig;
