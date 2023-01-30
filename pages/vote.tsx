@@ -7,11 +7,8 @@ import { Prose } from "@/components/Prose";
 const Vote: NextPage = () => {
   return (
     <Page
-    title="Voting Links"
-    description="Hey! Help us get more players by casting your vote for the server using one of or all of the links below. Each vote gives you B500 in-game money and either 3 diamonds or 3 emeralds."
-    style={{
-      textAlign: "center",
-    }}
+      title="Voting Links"
+      description="Hey! Help us get more players by casting your vote for the server using one of or all of the links below. Each vote gives you B500 in-game money and either 3 diamonds or 3 emeralds."
     >
       <Prose>
         <ul style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
