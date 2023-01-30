@@ -2,10 +2,6 @@ import type { NextPage } from "next";
 
 const Vote: NextPage = () => {
   return (
-      <Page
-        title="About"
-        description="This is a brief description about the about page."
-      >
     <div style={{
       display: 'flex',
       justifyContent: 'center',
