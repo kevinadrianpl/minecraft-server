@@ -8,13 +8,13 @@ tags: ['towny']
 <Note emoji="👋">Hi, this guide is to help with understanding the basics: Towny is a plugin that allows players to create and join towns, and claim land within those towns. Each town has a mayor who is responsible for managing the town and its members.</Note>
 
 Starting a Town
-Players can start towns using the command /town new {townname}. The townblock they are standing in will be the home block for the town, the exact spot/position will be the spawn point for the town, every time you type /t spawn. You can view other towns by typing /t spawn {townname}
+Players can start towns using the command /town new townname. The townblock they are standing in will be the home block for the town, the exact spot/position will be the spawn point for the town, every time you type /t spawn. You can view other towns by typing /t spawn townname
 More townblocks can be claimed using /town claim. These townblocks need to be directly adjacent to an already claimed townblock.
 
-It costs B1000 to start a town, and the daily upkeep/tax costs B10 per day and will remain that way no matter how big your town gets. If you wish to buy more plot claims you can use /t buy bonus {amount} and there is a 500 plot limit on that. They cost B100 each. Every townblock that you claim will cost B15, everytime you use /t claim. Same rules apply to outposts.
+It costs B1000 to start a town, and the daily upkeep/tax costs B10 per day and will remain that way no matter how big your town gets. If you wish to buy more plot claims you can use /t buy bonus {amount} and there is a 500 plot limit on that. They cost B100 each. Every townblock that you claim will cost B15, every time you use /t claim. Same rules apply to outposts.
 
 Joining Towns
-There are two ways to join towns, the first is by being invited by a Mayor or a Town assistant. The second it by joining an open town. Mayors and assistants can add players to their town with the command /town add {playername}, then the player will receive a prompt to either /accept or /deny the invitation.
+There are two ways to join towns, the first is by being invited by a Mayor or a Town assistant. The second it by joining an open town. Mayors and assistants can add players to their town with the command /town add playername, then the player will receive a prompt to either /accept or /deny the invitation.
 Mayors can set their towns to open using /town toggle open. A player who isn't in a town already can use the command /town join {townname} to join open towns.
 When residents join towns they increase the number of townblocks accessible to the mayor for claiming. A new town starts out with 8 /t claims but gain 8 more for every person that joins.
 
@@ -67,7 +67,7 @@ Jailed players cannot teleport.
 Jailed players cannot use Ender Pearls.
 Jailed players who die are sent back to their prescribed jail plot.
 Jailed players do not give monetary payouts when they are killed.
-Jailed players show their jailed status in the /res [playername] screen, along with the town they are jailed in.
+Jailed players show their jailed status in the /res playername screen, along with the town they are jailed in.
 
 Farm Plots
 Farm plots are designated with /plot set farm
@@ -139,7 +139,7 @@ Firecharges,
 Using bottles.
 
 Perm-Groups
-Each permission-type has 3 perm-groups to which the pemissions can be set for, these are displayed on your /resident perm line as FAO and stand for Friend, Ally, Outsider.
+Each permission-type has 3 perm-groups to which the permission can be set for, these are displayed on your /resident perm line as FAO and stand for Friend, Ally, Outsider.
 For residents, the Friend group consists of a player’s friend list.
 For towns the perm line reads RAO, with R representing Residents (players in that town) and mayors need to use /t set perm resident blah on/off instead of /t set perm friend blah on/off
 The other groups are:
