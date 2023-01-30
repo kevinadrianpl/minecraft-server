@@ -1,0 +1,53 @@
+---
+title: "What is LWC"
+description: "LWC is a plugin that allows users to place a lock on various blocks to prevent or control access to chests, furnaces, and various other blocks.
+"
+date: "2022-01-16"
+tags: ['react', 'typescript']
+---
+
+What is LWC?
+LWC is a plugin that allows users to place a lock on various blocks to prevent or control access to chests, furnaces, and various other blocks.
+
+Various blocks that LWC can protect besides chests and furnaces:
+
+- Signs*
+- Trapped Chests
+- Iron Doors
+- Wooden Doors
+- Brewing Stands
+- Wooden Trapdoors
+- Iron Trapdoors
+- Fence Gates
+*Note that the block the sign is placed on will also be protected.
+
+So how do you go about creating a basic LWC protection?
+
+First and foremost, every chest you place in the world will automatically be locked using LWC, you would need to manually unlock said chest or modify who can access it. To lock a chest that was unlocked, you can use the command /lock or /cprivate, you will then have to punch the chest/furnace to lock it.
+
+So now your chests are protected, great right? But what if I want my friend to look at all the coal I've mined? If you want to add someone to your protected chests, you can do /cmodify [name], for example, /cmodify DirewolF_ZA. After doing this, you will need to punch the chest and if done correctly that person will now be able to access your chest. To remove someone from your chests you will need to type the same but using a - in front of their name, for example, /cmodify -DirewolF_ZA.
+Now say we want to let a group of 4 people access our chest. We could /cmodify each one with a separate command, but what if I said you could do it all in one line? You can put multiple usernames in a single /cmodify command, for example, /cmodify DirewolF_ZA CptForest xRymeria. Easy right? The same method applies to remove multiple people.
+
+So now you know how to create protection and add people to it, but it's rather limited in functionality don't you think? Let people in who are allowed, keep people out who aren't, not all that useful. What if I said there was a way to make a lot more protections?
+First is the /cpublic protection. What this does is make it so anyone can access the protection, but not remove the block. This is useful for public furnaces you want everyone to use but no one to steal. You simply type in /cpublic and punch your protection. You can add people with /cmodify but there's no real reason to other than to add an Admin to the chest since everyone can access it already.
+
+Next is /cpassword. To make a password lock, set the lock with /cpassword followed by a password. In this case, our password is set to BlameForest, and now anytime someone wants to access my chest, they must type in /cunlock BlameForest, like this. There's no point to adding someone with /cmodify as they will not be exempt from putting in the password. You could add someone as an Admin to remove the chest or unlock it with /unlock if they forget the password, but otherwise, there is no reason to add anyone to the chest
+
+A lesser-known type of protection is called /cdonation, You set this lock like all the others, /cdonation and a punch. A donation chest can be opened by anyone and look inside as well as put things in, but they cannot take anything out. This is good for a donation chest, as well as a display case for a shop or something of the sort. Adding someone with /cmodify won't allow them to bypass.
+
+The Five Flags:
+
+Do you know the Five Flags? There are six flags in LWC actually (although one is Admin only so we won't discuss it.) These flags are used to customize the functionality of your protected items. These flags can be set with /c[flag] on or /c[flag] off, depending on whether you want it on or off.
+
+/chopper: This flag sets whether or not a hopper can interact with your protection, turn it on with /chopper on or off with /chopper off[/color].
+/cautoclose: This flag is for doors and similar devices which open or close. This flag determines whether or not the protected object will close automatically. /cautoclose on or /cautoclose off.
+/credstone: This flag determines whether or not your protected object interacts with redstone. /credstone on or /credstone off.
+/cmagnet: This flag determines whether or not your protected object will pull dropped items towards it. /cmagnet on or /cmagnet off.
+/callowexplosions: This flag determines whether or not your protected object can be destroyed by explosions (good idea to keep this off). /callowexplosions on or /callowexplosions off.
+
+A few other things that you should know,
+
+If you create any sort of protection (even /cpublic) on an iron door or trapdoor, you can right-click to open it as if it was wood.
+
+-Do you need to set a password lock on 1000 chests? Do you need to turn all of your doors into magnets? Want to save some time? Try /lwc mode persist on and type in a command. You can then go ahead and punch all of the things you want to affect with that command without having to type it in again! Just make sure you use /lwc mode persist off again afterward unless you want to spam your chat.
+-Are your chests just a little too far away sometimes? Do you wish you could send your items home without having to go home? Try /lwc mode droptransfer select on a protection (ideally a chest), then do /lwc mode droptransfer on. Now try dropping some items, you'll see it not spew out in front of you but end up in that chest. I'm not sure the range but I was able to deposit items from spawn into a chest at my house, so it's either infinite or pretty far. Just make sure to use /lwc mode droptransfer off when you're done to make sure you don't transfer when you really do mean to drop.
