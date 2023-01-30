@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import "./styles/vote.css";
+import "./vote.css";
 
 const Vote: NextPage = () => {
   return (
