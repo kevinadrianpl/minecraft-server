@@ -11,7 +11,7 @@ const Vote: NextPage = () => {
       description="Hey! Help us get more players by casting your vote for the server using one of or all of the links below. Each vote gives you B500 in-game money and either 3 diamonds or 3 emeralds."
     >
       <Prose>
-        <ul style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <ul style={{ display: "flex", flexDirection: "column"}}>
           <li>
             <a style={{ color: "purple" }} href='https://minecraft-mp.com/server/221984/vote/'>Minecraft-MP.com</a>
           </li>
