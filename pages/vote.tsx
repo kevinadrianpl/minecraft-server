@@ -10,7 +10,7 @@ const Vote: NextPage = () => {
       flexDirection: 'column',
       textAlign: 'center'
     }}>
-      <p>Cast your vote for the server:</p>
+      <p>Help us get more players by casting your vote for the server using one of the links below. Each vote gives you B500 in-game money and either 3 diamonds or 3 emeralds!:</p>
       <br />
       <ul style={{ listStyleType: 'none', padding: 0 }}>
         <li>
