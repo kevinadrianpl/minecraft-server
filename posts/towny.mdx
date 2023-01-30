@@ -11,11 +11,11 @@ Starting a Town
 Players can start towns using the command /town new townname. The townblock they are standing in will be the home block for the town, the exact spot/position will be the spawn point for the town, every time you type /t spawn. You can view other towns by typing /t spawn townname
 More townblocks can be claimed using /town claim. These townblocks need to be directly adjacent to an already claimed townblock.
 
-It costs B1000 to start a town, and the daily upkeep/tax costs B10 per day and will remain that way no matter how big your town gets. If you wish to buy more plot claims you can use /t buy bonus {amount} and there is a 500 plot limit on that. They cost B100 each. Every townblock that you claim will cost B15, every time you use /t claim. Same rules apply to outposts.
+It costs B1000 to start a town, and the daily upkeep/tax costs B10 per day and will remain that way no matter how big your town gets. If you wish to buy more plot claims you can use /t buy bonus amount} and there is a 500 plot limit on that. They cost B100 each. Every townblock that you claim will cost B15, every time you use /t claim. Same rules apply to outposts.
 
 Joining Towns
 There are two ways to join towns, the first is by being invited by a Mayor or a Town assistant. The second it by joining an open town. Mayors and assistants can add players to their town with the command /town add playername, then the player will receive a prompt to either /accept or /deny the invitation.
-Mayors can set their towns to open using /town toggle open. A player who isn't in a town already can use the command /town join {townname} to join open towns.
+Mayors can set their towns to open using /town toggle open. A player who isn't in a town already can use the command /town join townname} to join open towns.
 When residents join towns they increase the number of townblocks accessible to the mayor for claiming. A new town starts out with 8 /t claims but gain 8 more for every person that joins.
 
 Plot System of Land Ownership
@@ -26,10 +26,10 @@ Block protection is broken down into plots of land, called townblocks, which by 
 Plot Type
 
 Default Plots
-These plots do not need any specific command to be designated. They are put up for sale with /plot forsale {price}. A plot which is not of default type can be reset to a default plot with /plot set reset.
+These plots do not need any specific command to be designated. They are put up for sale with /plot forsale price}. A plot which is not of default type can be reset to a default plot with /plot set reset.
 
 Shop Plots
-Shop plots are designated with /plot set shop. A mayor can use /town set shopprice {price} to set how much shop plots are sold at by default. This can be overriden when a mayor puts the actual plot up for sale with /plot forsale {price}. A mayor can also charge an additional shoptax with /town set shoptax {price}. This tax is charged in addition to the normal plottax.
+Shop plots are designated with /plot set shop. A mayor can use /town set shopprice price} to set how much shop plots are sold at by default. This can be overriden when a mayor puts the actual plot up for sale with /plot forsale price}. A mayor can also charge an additional shoptax with /town set shoptax price}. This tax is charged in addition to the normal plottax.
 
 Arena Plots
 Arena plots are designated with /plot set arena.
@@ -37,7 +37,7 @@ PVP is on all the time in arena plots as well as friendly-fire damage. Town heal
 
 Embassy Plots
 Embassy plots are designated with /plot set embassy
-A mayor can use /town set embassyprice {price} to set how much embassy plots are sold at by default. This can be overriden when a mayor puts the actual plot up for sale with /plot forsale {price}. A mayor can also charge an additional embassytax with /town set embassytax {price}. This tax is charged in addition to the normal plottax.
+A mayor can use /town set embassyprice price} to set how much embassy plots are sold at by default. This can be overriden when a mayor puts the actual plot up for sale with /plot forsale price}. A mayor can also charge an additional embassytax with /town set embassytax price}. This tax is charged in addition to the normal plottax.
 An embassy plot can be bought by any player, whether they are in the town or not. The townblock remains owned by the host-town and a mayor from the host-town can take the plot from the owner at any time. Embassy plots can also be changed into shop plots, allowing for larger shop towns, where many different towns' players can set up shops.
 When a player leaves a town they do not lose ownership of their plots if those plots are set to be Embassy plots
 
@@ -79,9 +79,9 @@ Normally townblocks are claimed around the home block, always connected to the t
 
 Selling Land
 Land is sold by Mayors to Residents that are a part of their town. Mayors have a command used in-game to set the cost of all the plots that are set for sale hence-forth.
-/town set plotprice {price}
+/town set plotprice price
 This sets the cost of newly-set-for-sale plots, already set-for-sale plots keep their costs. If it is not set, the plots will cost B0 by default.
-To put a plot up for sale a mayor, while standing in the plot, type /plot forsale {price} The resident would then type /plot claim while standing in the plot to buy it.
+To put a plot up for sale a mayor, while standing in the plot, type /plot forsale price} The resident would then type /plot claim while standing in the plot to buy it.
 
 Using the Maps
 The map in towny displays the grid system of plots. The map can be viewed once using /towny map one time or you can set the map to show every time you move from one block to another:
@@ -152,21 +152,21 @@ Setting perms in-game with commands
 Setting perms for your town’s public land or your personal plots is easy! There are two distinct levels of protection provided by towns.
 First are the town blocks, protected because they are part of a town and not owned by anyone. When you enter one of these plots from the wilderness or an owned plot the notification will show “~ Unowned”.
 Mayors are able to set the permission for unowned plots using the the /town set perm command. A full list of commands is on the commands page, here are some examples:
-/town set perm {on/off} – This turns on or off all permissions for all perm-types and all perm-groups.
-/town set perm ally {on/off} – This turns on or off all perm-types and for the town’s allies (Towns in their nation, nations to which their nation is allied with.)
-/town set perm resident build {on/off} – This turns on or off all permissions for building done by residents of the town.
+/town set perm on/off} – This turns on or off all permissions for all perm-types and all perm-groups.
+/town set perm ally on/off} – This turns on or off all perm-types and for the town’s allies (Towns in their nation, nations to which their nation is allied with.)
+/town set perm resident build on/off} – This turns on or off all permissions for building done by residents of the town.
 
 Second, are the town blocks owned personally by a resident of a town. A resident is able to set the permission for unowned plots using the /resident set perm command. A full list of commands is on the commands page, here are some examples:
-/resident set perm {on/off} – This turns on or off all permissions for all perm-types and all perm-groups.
-/resident set perm friend {on/off} – This turns on or off all permissions for the resident’s friend list.
-/resident set perm ally {on/off} – This turns on or off all permissions for all perm-types to the resident’s ally list. This consists of the resident’s fellow townmembers, their nation’s fellow towns, and their nation’s allied nations.
-/resident set perm outsider switch {on/off} – This turns on or off permissions for switch use by outsiders.
+/resident set perm on/off} – This turns on or off all permissions for all perm-types and all perm-groups.
+/resident set perm friend on/off} – This turns on or off all permissions for the resident’s friend list.
+/resident set perm ally on/off} – This turns on or off all permissions for all perm-types to the resident’s ally list. This consists of the resident’s fellow townmembers, their nation’s fellow towns, and their nation’s allied nations.
+/resident set perm outsider switch on/off} – This turns on or off permissions for switch use by outsiders.
 
 Lastly, don’t forget those are just the defaults for plots, any owned plot can be set with its own individual perms:
-/plot set perm {on/off} – This turns on or off all permissions for all perm-types and all perm-groups on the plot which is being stood in.
-/plot set perm friend {on/off} – This turns on or off all permissions for the resident’s friend list on the plot which is being stood in.
-/plot set perm ally {on/off} – This turns on or off all permissions for all perm-types to the resident’s ally list. This consists of the resident’s fellow townmembers, their nation’s fellow towns, and their nation’s allied nations. This affects the plot which is being stood in.
-/plot set perm outsider switch {on/off} – This turns on or off permissions for switch use by outsiders on the plot which is being stood in.
+/plot set perm on/off} – This turns on or off all permissions for all perm-types and all perm-groups on the plot which is being stood in.
+/plot set perm friend on/off} – This turns on or off all permissions for the resident’s friend list on the plot which is being stood in.
+/plot set perm ally on/off} – This turns on or off all permissions for all perm-types to the resident’s ally list. This consists of the resident’s fellow townmembers, their nation’s fellow towns, and their nation’s allied nations. This affects the plot which is being stood in.
+/plot set perm outsider switch on/off} – This turns on or off permissions for switch use by outsiders on the plot which is being stood in.
 
 Mayors can change the protection of their town with the following commands:
 /town toggle explosion
@@ -195,47 +195,3 @@ On the town level, a mayor can set these flags using:
 Explosion protection stops all explosions. This stops TNT, TNT cannons and creeper explosions.
 Firespread protection stops all fires from spreading, including lava, lightning, and lighters.
 Piston-protection allows pistons to operate between similarly owned townblocks or wild areas.
-
-<Note>Too long to read? Take a look at the commands below for a basic overview of what to do.</Note>
-
-    1. GUI Menu: Before going further, note that there is a command in-game that brings up a graphical menu with all these commands built in, try it out using "/towny menu".
-
-    2. Joining a town: To join a town, you can use the command "/town join [town name]". If you would like to start your own town, you can use the command "/town new [town name]" and become the mayor of your own town.
-
-    3. Claiming land: To claim land for your town, you will need to be the mayor or a resident of the town. To claim land, use the command "/town claim". The amount of land you can claim will depend on the size of your town and the town's finances.
-
-    4. Managing residents: As the mayor of a town, you can invite other players to join your town using the command "/town add [playername]". You can also remove residents from your town using the command "/town remove [playername]". To promote a resident to an assistant mayor, use the command "/town rank add [playername] assistant". To see a list of all the residents in your town, use the command "/town residents".
-
-    5. Managing plots: Each piece of land within a town is called a plot. As the mayor of a town, you can assign plots to residents using the command "/plot assign [playername]". You can also set the permissions for a plot using the command "/plot set [perm] [true/false]", where [perm] can be any of the following: build, destroy, switch, itemuse, and mobspawn. To see a list of all the plots in your town, use the command "/plot list".
-
-    6. Taxes: Each town must pay taxes to maintain its claims. The amount of taxes owed can be seen using the command "/town". The mayor can also set the tax rate for the town using the command "/town set taxes [amount]". To see the amount of money your town has, use the command "/town deposit".
-
-    7. War and peace: In Towny, towns can declare war on each other. To declare war, use the command "/town war [town name]". To make peace, use the command "/town peace [town name]".
-
-    8. Nation: If you have a town, you can join or create a nation by using the command "/nation new [nation name]" or "/nation join [nation name]". As the leader of a nation, you can invite towns to join your nation using the command "/nation add [town name]".
-
-    9. Chat: To talk to other players in your town, use the command "/t [message]". To talk to players in your nation, use the command "/n [message]".
-
-    10. Plot border: To see the borders of your plots, use the command "/plot toggle".
-
-    11. Plot ownership: To see who owns a plot, you can use the command "/plot info".
-
-    12. Plot clearing: To clear the contents of a plot, you can use the command "/plot clear".
-
-    13. Town information: To see information about your town, use the command "/town".
-
-    14. Nation information: To see information about your nation, use the command "/nation".
-
-    15. Upkeep: To see how much it costs to maintain your town, use the command "/town upkeep".
-
-    16. Teleportation: To teleport to your town, use the command "/town spawn". To teleport to another player's town, use the command "/town spawn [town name]".
-
-    17. Town listings: To see a list of all the towns on the server, use the command "/town list". To see a list of all the nations on the server, use the command "/nation list".
-
-    18. Ranking: To see a list of the top 10 towns and nations by ranking, use the command "/town top" or "/nation top".
-
-    19. Town map: To see a map of all the towns and nations on the server, use the command "/town map".
-
-    20. Reset: To reset your town or nation, use the command "/town delete" or "/nation delete". This will erase all the data and information about your town or nation.
-
-<Note>With these commands, you should be able to navigate and participate in the world of Towny as a beginner.</Note>
