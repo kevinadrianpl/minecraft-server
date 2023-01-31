@@ -1,16 +1,34 @@
 import type { NextPage } from "next";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { Page } from "@/components/Page";
 import { Prose } from "@/components/Prose";
 
 const Vote: NextPage = () => {
+  const [serverStatus, setServerStatus] = useState({
+    playersOnline: 0,
+    maxPlayers: 100,
+  });
+
+  useEffect(() => {
+    async function fetchServerStatus() {
+      // Replace this with a real API endpoint that returns the server status information
+      const response = await fetch('dxrery.cyou');
+      const data = await response.json();
+
+      setServerStatus(data);
+    }
+
+    fetchServerStatus();
+  }, []);
+
   return (
     <Page
       title="Voting Links"
       description="Hey! Help us get more players by casting your vote for the server using one of or all of the links below. Each vote gives you B500 in-game money and either 3 diamonds or 3 emeralds."
     >
       <Prose>
+        <p>{`Players Online: ${serverStatus.playersOnline} / ${serverStatus.maxPlayers}`}</p>
         <ul style={{ display: "flex", flexDirection: "column"}}>
           <li>
             <a style={{ color: "purple" }} href='https://minecraft-mp.com/server/221984/vote/'>Minecraft-MP.com</a>
