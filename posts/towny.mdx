@@ -1,13 +1,13 @@
 ---
 title: "Towny Guide"
-description: "As a beginner on a Towny based server, here's a guide to get started!"
+description: "As a beginner on a Towny based server, here's a guide to get started."
 date: "2022-01-15"
 tags: ['towny']
 ---
 
 <Note emoji="👋">Hi, this guide is to help with understanding the basics: Towny is a plugin that allows players to create and join towns, and claim land within those towns. Each town has a mayor who is responsible for managing the town and its members.</Note>
 
-## Starting a Town
+# Starting a Town
 Players can start towns using the command /town new townname. The townblock they are standing in will be the home block for the town, the exact spot/position will be the spawn point for the town, every time you type /t spawn. You can view other towns by typing /t spawn townname
 More townblocks can be claimed using /town claim. These townblocks need to be directly adjacent to an already claimed townblock.
 It costs B1000 to start a town, and the daily upkeep/tax costs B10 per day and will remain that way no matter how big your town gets. If you wish to buy more plot claims you can use /t buy bonus amount} and there is a 500 plot limit on that. They cost B100 each. Every townblock that you claim will cost B15, every time you use /t claim. Same rules apply to outposts.
@@ -22,7 +22,7 @@ When residents join towns they increase the number of townblocks accessible to t
 ### Town Blocks
 Block protection is broken down into plots of land, called townblocks, which by default are 16x16x256 (the full height of the world.) Townblocks are claimed by town mayors who can then sell/give individual plots to their town's residents.
 
-### Plot Type
+## Plot Type
 
 ### Default Plots
 These plots do not need any specific command to be designated. They are put up for sale with /plot forsale price}. A plot which is not of default type can be reset to a default plot with /plot set reset.
@@ -88,6 +88,7 @@ For residents, the Friend group consists of a player’s friend list.
 For towns the perm line reads RAO, with R representing Residents (players in that town) and mayors need to use /t set perm resident blah on/off instead of /t set perm friend blah on/off
 
 #### The other groups are:
+
 #### Ally
 
 Players from your town,other towns in your nation,and nations your nation is allied with.
@@ -157,7 +158,7 @@ They will not change plots which were not set to the default perm line see in /t
 
 /town set perm reset – Propagates the perm line in /town to ALL town-owned plots owned by that town.
 
-#### These commands also affect the /town toggle and /plot toggle settings.
+These commands also affect the /town toggle and /plot toggle settings.
 
 ## Protection Additions Found in Towny Advanced
 New in Towny Advanced is three new protection types, anti-explosion, and anti-firespread and piston-protection.
