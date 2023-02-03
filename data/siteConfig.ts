@@ -5,7 +5,7 @@ const siteConfig: SiteConfig = {
   siteName: "Dxrery Networks",
   siteDescription:
     "Dxrery Networks is a Minecraft Towny server with custom rpg-like features and time-based ranks.",
-  siteThumbnail: "/og-image.png",
+  siteThumbnail: "/avatar.png",
   nav: [
     { label: "Posts", href: "/posts" },
     { label: "Map", href: "/map" },

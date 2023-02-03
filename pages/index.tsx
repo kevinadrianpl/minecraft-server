@@ -18,8 +18,8 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
         description={
           <>
             <p>
-              Dxrery Networks is a Minecraft Towny server with custom rpg-like features and time-based ranks.
-              We are mostly a South African community although the server is hosted in EU, we have players from all over the world. Join our {" "}
+              Dxrery Networks is a Minecraft Towny server with rpg-like features and time-based ranks.
+              We are a South African community server that is hosted in EU, we have players from all over. Join our {" "}
               <a href="https://discord.gg/Ubx7Tvu">
                 Discord
               </a>
