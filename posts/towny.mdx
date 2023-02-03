@@ -7,7 +7,7 @@ tags: ['towny']
 
 <Note emoji="👋">Hi, this guide is to help with understanding the basics: Towny is a plugin that allows players to create and join towns, and claim land within those towns. Each town has a mayor who is responsible for managing the town and its members.</Note>
 
-### Starting a Town
+## Starting a Town
 Players can start towns using the command /town new townname. The townblock they are standing in will be the home block for the town, the exact spot/position will be the spawn point for the town, every time you type /t spawn. You can view other towns by typing /t spawn townname
 More townblocks can be claimed using /town claim. These townblocks need to be directly adjacent to an already claimed townblock.
 It costs B1000 to start a town, and the daily upkeep/tax costs B10 per day and will remain that way no matter how big your town gets. If you wish to buy more plot claims you can use /t buy bonus amount} and there is a 500 plot limit on that. They cost B100 each. Every townblock that you claim will cost B15, every time you use /t claim. Same rules apply to outposts.
@@ -17,52 +17,41 @@ There are two ways to join towns, the first is by being invited by a Mayor or a 
 Mayors can set their towns to open using /town toggle open. A player who isn't in a town already can use the command /town join townname} to join open towns.
 When residents join towns they increase the number of townblocks accessible to the mayor for claiming. A new town starts out with 8 /t claims but gain 8 more for every person that joins.
 
-### Plot System of Land Ownership
+## Plot System of Land Ownership
 
-## Town Blocks
+### Town Blocks
 Block protection is broken down into plots of land, called townblocks, which by default are 16x16x256 (the full height of the world.) Townblocks are claimed by town mayors who can then sell/give individual plots to their town's residents.
 
-## Plot Type
+### Plot Type
 
-## Default Plots
+### Default Plots
 These plots do not need any specific command to be designated. They are put up for sale with /plot forsale price}. A plot which is not of default type can be reset to a default plot with /plot set reset.
 
-## Shop Plots
+### Shop Plots
 Shop plots are designated with /plot set shop. A mayor can use /town set shopprice price} to set how much shop plots are sold at by default. This can be overriden when a mayor puts the actual plot up for sale with /plot forsale price}. A mayor can also charge an additional shoptax with /town set shoptax price}. This tax is charged in addition to the normal plottax.
 
-## Arena Plots
+### Arena Plots
 Arena plots are designated with /plot set arena.
 PVP is on all the time in arena plots as well as friendly-fire damage. Town health regen is also disabled in arena plots.
 
-## Embassy Plots
+### Embassy Plots
 Embassy plots are designated with /plot set embassy
 A mayor can use /town set embassyprice price} to set how much embassy plots are sold at by default. This can be overriden when a mayor puts the actual plot up for sale with /plot forsale price}. A mayor can also charge an additional embassytax with /town set embassytax price}. This tax is charged in addition to the normal plottax.
 An embassy plot can be bought by any player, whether they are in the town or not. The townblock remains owned by the host-town and a mayor from the host-town can take the plot from the owner at any time. Embassy plots can also be changed into shop plots, allowing for larger shop towns, where many different towns' players can set up shops.
 When a player leaves a town they do not lose ownership of their plots if those plots are set to be Embassy plots
 
-## Wilds Plots
+### Wilds Plots
 Wilds plots are designated with /plot set wilds
 A wilds plot allows residents to destroy the blocks found on the wild ignore ID list. This includes ores, trees, flowers, mushrooms and other harvestable blocks by default. It does not include stone, dirt, grass and other terrain blocks. It is useful for creating tree farms, and protecting the terrain around a town, while still allowing residents to cut trees and explore caves. You can also set allies or outsiders perms if you want non-town-members to use the Wilds plots
 
-## Inn Plots
+### Inn Plots
 Inn plots are designated with /plot set inn
 An Inn plot allows anyone to use a bed to set their ‘/res spawn’ and spawn on death. The Inn plot will still deny a player who is in a nation declared as an enemy by your nation.
 
-## Jail Plots
-Jail plots are designated with /plot set jail
-**Players can become jailed if:**
-    The player’s mayor/sheriffs send them to jail. An attacker who attacks a town which considers him an Enemy (Nation-relationship) dies in that Town. He is sent to the first available Jail plot of the defending town.
-**Jailed players become unjailed if:**
-    They leave their town and become a nomad,
-    The mayor/sheriff unjails them,
-    The player pays a bail amount to the town which jailed them, (using: /resident jail paybail)
-    They manage to escape the jail plot and the town and get into Wilderness.
-
-Jailed players cannot teleport.
-Jailed players cannot use Ender Pearls.
-Jailed players who die are sent back to their prescribed jail plot.
-Jailed players do not give monetary payouts when they are killed.
-Jailed players show their jailed status in the /res playername screen, along with the town they are jailed in.
+### Jail Plots
+Jail plots are designated with /plot set jail. The player’s mayor/sheriffs send them to jail. An attacker who attacks a town which considers him an Enemy (Nation-relationship) dies in that Town. He is sent to the first available Jail plot of the defending town.
+Jailed players become unjailed if they leave their town and become a nomad, the mayor/sheriff unjails them, the player pays a bail amount to the town which jailed them, (using: /resident jail paybail), or they manage to escape the jail plot and the town and get into Wilderness.
+Jailed players cannot teleport. Jailed players cannot use Ender Pearls. Jailed players who die are sent back to their prescribed jail plot. Jailed players do not give monetary payouts when they are killed. Jailed players show their jailed status in the /res playername screen, along with the town they are jailed in.
 
 ## Farm Plots
 Farm plots are designated with /plot set farm
@@ -80,11 +69,9 @@ To put a plot up for sale a mayor, while standing in the plot, type /plot forsal
 
 ## Using the Maps
 The map in towny displays the grid system of plots. The map can be viewed once using /towny map one time or you can set the map to show every time you move from one block to another:
-Use /resident set mode map to turn it on.
-And use /resident set mode reset to turn it off.
-A large version of the map can be seen using /towny map big.
+Use /resident set mode map to turn it on and use /resident set mode reset to turn it off. A large version of the map can be seen using /towny map big.
 
-Protect Your Blocks
+## Protect Your Blocks
 Towny’s lets players protect themselves. An admin doesn’t need to go around protecting land for players, and players can’t run rampant claiming massive amounts of land without working for it and building their towns.
 The first concepts you need to digest is the 4 perm-types and 3 groups.
 
@@ -92,48 +79,14 @@ There are 4 permission-type values, which can be set for personal plots and for 
 Plots start with the default settings for plot perms (be it a resident-owned or town-owned plot,) but the owner of the plots can set different perms to different plots. To view a plots perm type /plot perm and to set a plots’ perms use /plot set perm.
 Default permissions are viewable by typing either /resident for personal plot perms or by typing /town for town permissions.
 
-Perm-Types
+### Perm-Types
 The 4 permission-types available are Build, Destroy, Switch and Itemuse.
 
 Build allows players to place blocks in your town/plot.
 
 Destroy allows players to remove blocks in your town/plot.
 
-Switch covers the use of:
-
-Dispensers,
-Noteblocks,
-Chests,
-Furnaces,
-Wooden and iron doors,
-Levers,
-Gold, iron, stone and wood pressure plates,
-Stone buttons,
-Trapdoors,
-Jukeboxes,
-Redstone repeaters,
-Gates,
-Trapped chests,
-Redstone comparators,
-Beacon blocks,
-Hoppers,
-Droppers,
-Item frames,
-Accessing minecart hoppers, minecart chests, minecart furnaces.
-Shulker boxes
-
-Itemuse covers the use of:
-
-Water and lava buckets,
-Empty buckets,
-Lighters,
-Bonemeal and other dyes,
-Enderpearls,
-Placing/destroying all minecart types,
-Firecharges,
-Using bottles.
-
-Perm-Groups
+### Perm-Groups
 Each permission-type has 3 perm-groups to which the permission can be set for, these are displayed on your /resident perm line as FAO and stand for Friend, Ally, Outsider.
 For residents, the Friend group consists of a player’s friend list.
 For towns the perm line reads RAO, with R representing Residents (players in that town) and mayors need to use /t set perm resident blah on/off instead of /t set perm friend blah on/off
@@ -143,50 +96,77 @@ Players from your town,other towns in your nation,and nations your nation is all
 Outsiders
 Players who are not part of your town or nation or nation’s allies.
 
-Setting perms in-game with commands
+### Setting perms in-game with commands
 Setting perms for your town’s public land or your personal plots is easy! There are two distinct levels of protection provided by towns.
 First are the town blocks, protected because they are part of a town and not owned by anyone. When you enter one of these plots from the wilderness or an owned plot the notification will show “~ Unowned”.
-Mayors are able to set the permission for unowned plots using the the /town set perm command. A full list of commands is on the commands page, here are some examples:
+
+**Mayors are able to set the permission for unowned plots using the the /town set perm command. A full list of commands is on the commands page, here are some examples:**
+
 /town set perm on/off} – This turns on or off all permissions for all perm-types and all perm-groups.
+
 /town set perm ally on/off} – This turns on or off all perm-types and for the town’s allies (Towns in their nation, nations to which their nation is allied with.)
+
 /town set perm resident build on/off} – This turns on or off all permissions for building done by residents of the town.
 
-Second, are the town blocks owned personally by a resident of a town. A resident is able to set the permission for unowned plots using the /resident set perm command. A full list of commands is on the commands page, here are some examples:
+**Second, are the town blocks owned personally by a resident of a town. A resident is able to set the permission for unowned plots using the /resident set perm command. A full list of commands is on the commands page, here are some examples:**
+
 /resident set perm on/off} – This turns on or off all permissions for all perm-types and all perm-groups.
+
 /resident set perm friend on/off} – This turns on or off all permissions for the resident’s friend list.
+
 /resident set perm ally on/off} – This turns on or off all permissions for all perm-types to the resident’s ally list. This consists of the resident’s fellow townmembers, their nation’s fellow towns, and their nation’s allied nations.
+
 /resident set perm outsider switch on/off} – This turns on or off permissions for switch use by outsiders.
 
-Lastly, don’t forget those are just the defaults for plots, any owned plot can be set with its own individual perms:
+**Lastly, don’t forget those are just the defaults for plots, any owned plot can be set with its own individual perms:**
+
 /plot set perm on/off} – This turns on or off all permissions for all perm-types and all perm-groups on the plot which is being stood in.
+
 /plot set perm friend on/off} – This turns on or off all permissions for the resident’s friend list on the plot which is being stood in.
+
 /plot set perm ally on/off} – This turns on or off all permissions for all perm-types to the resident’s ally list. This consists of the resident’s fellow townmembers, their nation’s fellow towns, and their nation’s allied nations. This affects the plot which is being stood in.
+
 /plot set perm outsider switch on/off} – This turns on or off permissions for switch use by outsiders on the plot which is being stood in.
 
-Mayors can change the protection of their town with the following commands:
+**Mayors can change the protection of their town with the following commands:**
+
 /town toggle explosion
+
 /town toggle fire
+
 /town toggle pvp
+
 /town toggle mobs
 
-Mayors and Residents can change each of their plots individually using these commands:
+**Mayors and Residents can change each of their plots individually using these commands:**
+
 /plot toggle explosion
+
 /plot toggle fire
+
 /plot toggle pvp
+
 /plot toggle mobs
 
-Per-plot toggles are overridden by a mayor’s town toggles.
+**Per-plot toggles are overridden by a mayor’s town toggles.**
+
 The preceding commands by themselves will change the perm line seen from /town or /res. They will also change any plots that were using the previously-set default perm line (town-owned or player-owned plots.)
 They will not change plots which were not set to the default perm line see in /town or /res. In order to change all plots a mayor or resident must use the following command, which will propagate the current perm line seen in /town or /res to ALL plots owned by the town or resident.
-/res set perm reset – Propagates the perm line in /res to ALL plots owned by that resident.
-/town set perm reset – Propagates the perm line in /town to ALL town-owned plots owned by that town.
-These commands also affect the /town toggle and /plot toggle settings.
 
-Protection Additions Found in Towny Advanced
+/res set perm reset – Propagates the perm line in /res to ALL plots owned by that resident.
+
+/town set perm reset – Propagates the perm line in /town to ALL town-owned plots owned by that town.
+
+**These commands also affect the /town toggle and /plot toggle settings.**
+
+## Protection Additions Found in Towny Advanced
 New in Towny Advanced is three new protection types, anti-explosion, and anti-firespread and piston-protection.
 On the town level, a mayor can set these flags using:
+
 /town toggle explosion
+
 /town toggle fire
+
 Explosion protection stops all explosions. This stops TNT, TNT cannons and creeper explosions.
 Firespread protection stops all fires from spreading, including lava, lightning, and lighters.
 Piston-protection allows pistons to operate between similarly owned townblocks or wild areas.
