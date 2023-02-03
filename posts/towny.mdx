@@ -91,11 +91,11 @@ For towns the perm line reads RAO, with R representing Residents (players in tha
 
 #### Ally
 
-Players from your town,other towns in your nation,and nations your nation is allied with.
+- Players from your town,other towns in your nation,and nations your nation is allied with.
 
 #### Outsiders
 
-Players who are not part of your town or nation or nation’s allies.
+- Players who are not part of your town or nation or nation’s allies.
 
 ### Setting perms in-game with commands
 
@@ -104,70 +104,71 @@ First are the town blocks, protected because they are part of a town and not own
 
 #### Mayors are able to set the permission for unowned plots using the the /town set perm command. A full list of commands is on the commands page, here are some examples:
 
-/town set perm on/off} – This turns on or off all permissions for all perm-types and all perm-groups.
+- /town set perm on/off} – This turns on or off all permissions for all perm-types and all perm-groups.
 
-/town set perm ally on/off} – This turns on or off all perm-types and for the town’s allies (Towns in their nation, nations to which their nation is allied with.)
+- /town set perm ally on/off} – This turns on or off all perm-types and for the town’s allies (Towns in their nation, nations to which their nation is allied with.)
 
-/town set perm resident build on/off} – This turns on or off all permissions for building done by residents of the town.
+- /town set perm resident build on/off} – This turns on or off all permissions for building done by residents of the town.
 
 #### Second, are the town blocks owned personally by a resident of a town. A resident is able to set the permission for unowned plots using the /resident set perm command. A full list of commands is on the commands page, here are some examples:
 
-/resident set perm on/off} – This turns on or off all permissions for all perm-types and all perm-groups.
+- /resident set perm on/off} – This turns on or off all permissions for all perm-types and all perm-groups.
 
-/resident set perm friend on/off} – This turns on or off all permissions for the resident’s friend list.
+- /resident set perm friend on/off} – This turns on or off all permissions for the resident’s friend list.
 
-/resident set perm ally on/off} – This turns on or off all permissions for all perm-types to the resident’s ally list. This consists of the resident’s fellow townmembers, their nation’s fellow towns, and their nation’s allied nations.
+- /resident set perm ally on/off} – This turns on or off all permissions for all perm-types to the resident’s ally list. This consists of the resident’s fellow townmembers, their nation’s fellow towns, and their nation’s allied nations.
 
-/resident set perm outsider switch on/off} – This turns on or off permissions for switch use by outsiders.
+- /resident set perm outsider switch on/off} – This turns on or off permissions for switch use by outsiders.
 
 #### Lastly, don’t forget those are just the defaults for plots, any owned plot can be set with its own individual perms:
 
-/plot set perm on/off} – This turns on or off all permissions for all perm-types and all perm-groups on the plot which is being stood in.
+- /plot set perm on/off} – This turns on or off all permissions for all perm-types and all perm-groups on the plot which is being stood in.
 
-/plot set perm friend on/off} – This turns on or off all permissions for the resident’s friend list on the plot which is being stood in.
+- /plot set perm friend on/off} – This turns on or off all permissions for the resident’s friend list on the plot which is being stood in.
 
-/plot set perm ally on/off} – This turns on or off all permissions for all perm-types to the resident’s ally list. This consists of the resident’s fellow townmembers, their nation’s fellow towns, and their nation’s allied nations. This affects the plot which is being stood in.
+- /plot set perm ally on/off} – This turns on or off all permissions for all perm-types to the resident’s ally list. This consists of the resident’s fellow townmembers, their nation’s fellow towns, and their nation’s allied nations. This affects the plot which is being stood in.
 
-/plot set perm outsider switch on/off} – This turns on or off permissions for switch use by outsiders on the plot which is being stood in.
+- /plot set perm outsider switch on/off} – This turns on or off permissions for switch use by outsiders on the plot which is being stood in.
 
 #### Mayors can change the protection of their town with the following commands:
 
-/town toggle explosion
+- /town toggle explosion
 
-/town toggle fire
+- /town toggle fire
 
-/town toggle pvp
+- /town toggle pvp
 
-/town toggle mobs
+- /town toggle mobs
 
 #### Mayors and Residents can change each of their plots individually using these commands:
 
-/plot toggle explosion
+- /plot toggle explosion
 
-/plot toggle fire
+- /plot toggle fire
 
-/plot toggle pvp
+- /plot toggle pvp
 
-/plot toggle mobs
+- /plot toggle mobs
 
 #### Per-plot toggles are overridden by a mayor’s town toggles.
 
 The preceding commands by themselves will change the perm line seen from /town or /res. They will also change any plots that were using the previously-set default perm line (town-owned or player-owned plots.)
 They will not change plots which were not set to the default perm line see in /town or /res. In order to change all plots a mayor or resident must use the following command, which will propagate the current perm line seen in /town or /res to ALL plots owned by the town or resident.
 
-/res set perm reset – Propagates the perm line in /res to ALL plots owned by that resident.
+- /res set perm reset – Propagates the perm line in /res to ALL plots owned by that resident.
 
-/town set perm reset – Propagates the perm line in /town to ALL town-owned plots owned by that town.
+- /town set perm reset – Propagates the perm line in /town to ALL town-owned plots owned by that town.
 
 These commands also affect the /town toggle and /plot toggle settings.
 
 ## Protection Additions Found in Towny Advanced
 New in Towny Advanced is three new protection types, anti-explosion, and anti-firespread and piston-protection.
+
 On the town level, a mayor can set these flags using:
 
-/town toggle explosion
+- /town toggle explosion
 
-/town toggle fire
+- /town toggle fire
 
 Explosion protection stops all explosions. This stops TNT, TNT cannons and creeper explosions.
 Firespread protection stops all fires from spreading, including lava, lightning, and lighters.
