@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
+import { useEffect } from 'react';
 
 const Map: NextPage = () => {
-  type Redirect = (url: string) => void;
-  
-  const redirect: Redirect = (url) => {
+  const redirect = (url: string) => {
     window.location.href = url;
   };
 
