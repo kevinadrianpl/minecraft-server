@@ -8,7 +8,6 @@ const siteConfig: SiteConfig = {
   siteThumbnail: "/avatar.png",
   nav: [
     { label: "Posts", href: "/posts" },
-    { label: "About", href: "/about" },
     { label: "Vote", href: "/vote" },
     { label: "Store", href: "/store" },
     { label: "Map", href: "/map" },
