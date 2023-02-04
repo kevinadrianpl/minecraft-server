@@ -8,10 +8,10 @@ const siteConfig: SiteConfig = {
   siteThumbnail: "/avatar.png",
   nav: [
     { label: "Posts", href: "/posts" },
-    { label: "Map", href: "/map" },
     { label: "About", href: "/about" },
-    { label: "Store", href: "/store" },
     { label: "Vote", href: "/vote" },
+    { label: "Map", href: "/map" },
+    { label: "Store", href: "/store" },
   ],
 };
 export default siteConfig;
