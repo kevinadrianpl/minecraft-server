@@ -13,4 +13,4 @@ const Map: NextPage = () => {
   return <div>Redirecting...</div>;
 };
 
-export default Store;
+export default Shop;

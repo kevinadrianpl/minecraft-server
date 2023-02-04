@@ -9,7 +9,7 @@ const siteConfig: SiteConfig = {
   nav: [
     { label: "Posts", href: "/posts" },
     { label: "Vote", href: "/vote" },
-    { label: "Store", href: "/store" },
+    { label: "Shop", href: "/shop" },
     { label: "Map", href: "/map" },
   ],
 };
