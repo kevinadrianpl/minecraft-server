@@ -1,12 +1,14 @@
 import type { NextPage } from "next";
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
 
 const Map: NextPage = () => {
-  const router = useRouter();
+  type Redirect = (url: string) => void;
+  
+  const redirect: Redirect = (url) => {
+    window.location.href = url;
+  };
 
   useEffect(() => {
-    router.push('http://dxrery.cyou:3288/');
+    redirect('http://dxrery.cyou:3288/');
   }, []);
 
   return <div>Redirecting...</div>;
