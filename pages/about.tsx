@@ -7,20 +7,20 @@ const About: NextPage = () => {
     <>
       <Page
         title="About"
-        description="This is a brief description about the about page."
+        description="All about Dxrery Networks."
       >
         <Prose>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed
-            aliquam tempora nihil magni natus mollitia. Doloribus,
-            exercitationem iusto odio asperiores dolor, alias excepturi maxime
-            distinctio quod eum saepe eos!
+            Dxrery Networks is a small Minecraft community on a server that is 
+            currently hosted in Germany, but we occasionally move back to SA. 
+            We have many players from all over the world that play on it, so
+            we mainly speak English on the server and Discord. Welcome!
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed
-            aliquam tempora nihil magni natus mollitia. Doloribus,
-            exercitationem iusto odio asperiores dolor, alias excepturi maxime
-            distinctio quod eum saepe eos!
+            We have many mod-like features on the server, including custom
+            Quests, Jobs, a special BattlePass, SlimeFun, DeathChests, 
+            Backpacks, Shops, PlayerWarps, Dynmap, PyroFishing, PyroMining,
+            A resource world, SafariNets, Towny, Leveled Mobs, and more!
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed
