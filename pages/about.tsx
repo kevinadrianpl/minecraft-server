@@ -14,25 +14,25 @@ const About: NextPage = () => {
             Dxrery Networks is a small Minecraft community on a server that is 
             currently hosted in Germany, but we occasionally move back to SA. 
             We have many players from all over the world that play on it, so
-            we mainly speak English on the server and Discord. Welcome!
+            we mainly speak English on the server and Discord. We welcome you.
           </p>
           <p>
             We have many mod-like features on the server, including custom
-            Quests, Jobs, a special BattlePass, SlimeFun, DeathChests, 
-            Backpacks, Shops, PlayerWarps, Dynmap, PyroFishing, PyroMining,
-            A resource world, SafariNets, Towny, Leveled Mobs, and more!
+            Quests, Jobs, special BattlePass, SlimeFun, DeathChests, Shops,
+            Backpacks, PlayerWarps, Dynmap, PyroFishing, PyroMining, Towny,
+            A resource world, SafariNets, Leveled Mobs, and Custom Terrain.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed
-            aliquam tempora nihil magni natus mollitia. Doloribus,
-            exercitationem iusto odio asperiores dolor, alias excepturi maxime
-            distinctio quod eum saepe eos!
+            This server does not run with the help of any staff member, the
+            owner has as little interaction within the server as possible. 
+            Everything runs on it's own, we do not expect people to stay or
+            grow the server, we are content with small respectful numbers.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sed
-            aliquam tempora nihil magni natus mollitia. Doloribus,
-            exercitationem iusto odio asperiores dolor, alias excepturi maxime
-            distinctio quod eum saepe eos!
+            The server rules can be found in-game using /rules, you can also
+            find details about the ranks in-game using /ranks and /kits. 
+            Should you need any more information, Discord is where you will
+            find it. Everyone on there is willing to help you.
           </p>
         </Prose>
       </Page>
