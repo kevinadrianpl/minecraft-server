@@ -1,0 +1,76 @@
+---
+title: "Towny FAQ"
+description: "This is a quick FAQ that will address most of the questions seen from new players, citizens and mayors in chat on a daily basis."
+date: "2022-01-25"
+tags: ['towny', 'faq']
+---
+
+## Newbie Questions
+
+Q: How do I join a town?
+A: Ask in chat if there are any towns accepting residents. They will invite you, at which point you need to type /accept.
+
+Q: How do I get to my town?
+A: /t spawn
+
+Q: How do I get a plot?
+A: Most towns will have a few plots up for sale. Ask your mayor where they are, or do some exploring. Plots will generally be free depending on the mayor. Once you have the money for a plot, walk on top of it and type /plot claim.
+
+Q: How do I visit another town?
+A: /t spawn townname. This may charge you B10.
+
+Q: How do I check how much money I have?
+A: /balance , or /bal . This will list your beasties or B.
+
+## Citizen Questions
+
+Q: How do I find out who's in my town?
+A: /town or just /t. This will show you a list of town residents as well as some other useful town information like how much money is in the town bank and what your taxes are.
+
+Q: How do I find out who's online in my town?
+A: /t online. This will list all online players in your town.
+
+Q: How do I donate to my town?
+A: /t deposit amount. You should do this whenever you have spare money as it helps your town to purchase new land and prevent the town from falling into ruin.
+
+Q: How do I add friends?
+A: /res friend add playername. This will add them as your friend and allow them to interact with plots that have permissions set up for friends.
+
+Q: How do I find out what town someone is in, who they're friends with, how much money the have, etc?
+A: Do /res playername to bring up their resident page, which will display the relevant information.
+
+Q: How do I let other people interact with my plot?
+A: Below are the setting permissions for each aspect:
+
+- /plot set perm on/off
+
+- /plot set perm friend/ally/resident/outsider on/off
+
+- /plot set perm build/destroy/itemuse/switch on/off
+
+- /plot set perm friend/ally/resident/outsider build/destroy/itemuse/switch [on/off]
+
+The first command toggles either everyone can do everything on your plot, or no one can do anything on your plot (except for you). In normal circumstances you want /plot set perm off.
+
+The second command toggles a group of players can do anything or a group of players can do nothing on your plot. The groups are friends, allies, residents and outsiders. For example if I typed /plot set perm resident on, residents of my town would be able to do anything on my plot.
+
+The third command toggles a specific type of interaction with your plot by anyone or a specific type of interaction with your plot by no one. So for example you can specify that anyone can open doors and flip levers and such on your plot by using /plot set perm switch on.
+
+The fourth command combines the second and the third. You can specify both a specific group of people and a specific type of interaction. For example, I can allow only my friends to build on my plot by typing /plot set perm friend build on.
+
+## Mayor/Assistant Questions:
+
+Q: How do I make a town?
+A: Find a place in the towns world that isn't too close to other towns, then type /town new townname. Note that this costs B1000 and you are recommended to have at least B2500 before starting a town.
+
+Q: How do I add people to my town?
+A: /t add playername. They will be asked to either accept or deny this invitation. Also, you can do /t toggle open to make it so that players can join your town without an invitation. They must simply type /t join [townname] and they will be able to join without your invitation.
+
+Q: How do I set taxes?
+A: /t set taxes amount. This amount is charged automatically from each resident every 24hrs and goes directly into the town bank.
+
+Q: How do I claim new land for my town?
+A: /t claim while standing on a wilderness chunk adjacent to a town chunk. This costs B10.
+
+Q: How do I set my town's spawn?
+A: First, make sure you are on your town's homeblock. If you want your spawn to be on another plot then go to that plot and type /t set homeblock. Then type /t set spawn in the location on the homeblock you want players to spawn at.
