@@ -12,3 +12,4 @@ const Map: NextPage = () => {
 
   return <div>Redirecting...</div>;
 };
+
