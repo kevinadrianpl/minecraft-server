@@ -14,4 +14,5 @@ const siteConfig: SiteConfig = {
     { label: "Map", href: "/map" },
   ],
 };
+
 export default siteConfig;

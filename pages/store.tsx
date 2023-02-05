@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useEffect } from 'react';
 
-const Map: NextPage = () => {
+const Store: NextPage = () => {
   const redirect = (url: string) => {
     window.location.href = url;
   };
@@ -12,3 +12,5 @@ const Map: NextPage = () => {
 
   return <div>Redirecting...</div>;
 };
+
+export default Store;
