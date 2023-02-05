@@ -7,10 +7,10 @@ const siteConfig: SiteConfig = {
     "Dxrery Networks is a Minecraft Towny server with custom rpg-like features and time-based ranks.",
   siteThumbnail: "/avatar.png",
   nav: [
-    { label: "Posts", href: "/posts" },
-    { label: "Vote", href: "/vote" },
-    { label: "Store", href: "/store" },
-    { label: "Map", href: "/map" },
+    { label: "📝 Posts", href: "/posts" },
+    { label: "⭐️ Vote", href: "/vote" },
+    { label: "💰 Store", href: "/store" },
+    { label: "🗺️ Map", href: "/map" },
   ],
 };
 
