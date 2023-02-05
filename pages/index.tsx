@@ -19,7 +19,8 @@ const Home: NextPage<HomeProps> = ({ posts }) => {
           <>
             <p>
               Dxrery Networks is a Minecraft Towny server with rpg-like features and time-based ranks.
-              We are a South African server hosted in EU (Germany), we have players from all over. Join our {" "}
+              Join the server using the IP **play.dxrery.cyou** or just **dxrery.cyou**. We are a South African server hosted in EU (Germany), 
+              we have players from all over. Join our {" "}
               <a href="https://discord.gg/Ubx7Tvu">
                 Discord
               </a>
