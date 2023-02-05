@@ -22,18 +22,6 @@ const About: NextPage = () => {
             Backpacks, PlayerWarps, Dynmap, PyroFishing, PyroMining, Towny,
             A resource world, SafariNets, Leveled Mobs, and Custom Terrain.
           </p>
-          <p>
-            This server does not run with the help of any staff member, the
-            owner has as little interaction within the server as possible.
-            Everything runs on it's own, we do not expect people to stay or
-            grow the server, we are content with small respectful numbers.
-          </p>
-          <p>
-            The server rules can be found in-game using /rules, you can also
-            find details about the ranks in-game using /ranks and /kits.
-            Should you need any more information, Discord is where you will
-            find it. Everyone on there is willing to help you.
-          </p>
         </Prose>
       </Page>
     </>
