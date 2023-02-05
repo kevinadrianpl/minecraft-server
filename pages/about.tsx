@@ -15,6 +15,7 @@ const About: NextPage = () => {
             currently hosted in Germany, but we occasionally move to SA.
             We have many players from all over the world that play on it,
             we mainly speak English on the server and Discord. Welcome.
+
             
             We have many mod-like features on the server, including custom
             Quests, Jobs, special BattlePass, SlimeFun, DeathChests, Shops,
