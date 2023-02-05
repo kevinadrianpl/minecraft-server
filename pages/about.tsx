@@ -12,8 +12,8 @@ const About: NextPage = () => {
         <Prose>
           <p>
             Dxrery Networks is a small Minecraft community on a server 
-            currently hosted in Germany, but we occasionally move back to SA. 
-            We have many players from all over the world that play on it, so
+            currently hosted in Germany, but we occasionally move to SA.
+            We have many players from all over the world that play on it,
             we mainly speak English on the server and Discord. Welcome.
           </p>
           <p>
