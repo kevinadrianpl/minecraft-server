@@ -13,10 +13,10 @@ const Vote: NextPage = () => {
       <Prose>
         <ul style={{ display: "flex", flexDirection: "column"}}>
           <li>
-            <a style={{ color: "gold" }} href='https://minecraft-mp.com/server/221984/vote/'>Minecraft-MP.com</a>
+            <a style={{ color: "gold" }} href='https://minecraft-mp.com/server/221984/vote/'>Minecraft-MP.com ZA</a>
           </li>
           <li>
-            <a style={{ color: "gold" }} href='https://www.planetminecraft.com/server/dxrery-networks/vote/'>PlanetMinecraft.com</a>
+            <a style={{ color: "gold" }} href='https://minecraft-mp.com/server/315282/vote/'>Minecraft-MP.com EU</a>
           </li>
           <li>
             <a style={{ color: "gold" }} href='https://minecraftservers.org/vote/637524/'>MinecraftServers.org</a>
