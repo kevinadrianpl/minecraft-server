@@ -4,17 +4,17 @@ import { Command, Sun, Moon, Code } from "react-feather";
 import { cx } from "@/lib/utils";
 
 const THEME_MAP: { [key: string]: { label: string; icon: React.ReactNode } } = {
-  system: {
-    label: "System",
-    icon: <Command width=".9em" />,
+  dark: {
+    label: "Dark",
+    icon: <Moon width=".9em" />,
   },
   light: {
     label: "Light",
     icon: <Sun width=".9em" />,
   },
-  dark: {
-    label: "Dark",
-    icon: <Moon width=".9em" />,
+  system: {
+    label: "System",
+    icon: <Command width=".9em" />,
   },
 };
 
