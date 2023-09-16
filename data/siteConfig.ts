@@ -10,7 +10,6 @@ const siteConfig: SiteConfig = {
     { label: "📝 Posts", href: "/posts" },
     { label: "⭐️ Vote", href: "/vote" },
     { label: "💰 Store", href: "/store" },
-    { label: "🗺️ Map", href: "/map" },
   ],
 };
 
