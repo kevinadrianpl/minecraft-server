@@ -1,0 +1,38 @@
+---
+title: "Creating a Shop with ChestShop Plugin"
+description: "This simple setup allows players to establish their shops with buy and sell prices for specified quantities of items.
+"
+date: "2024-01-06"
+tags: ['chestshop', 'shops']
+---
+
+### Creating a Shop with ChestShop Plugin
+
+1. **Placing the Chest and Sign**
+   - Place a chest on the ground where you want your shop.
+   - Put a sign one block away from the chest (for example, above it but it can also work by placing it directly on the chest).
+
+2. **Formatting the Sign**
+   - **Line 1**: Leave this line empty; your name will automatically fill in.
+   - **Line 2**: Enter the amount of items to buy or sell (e.g., `64` for a full stack).
+   - **Line 3**: Specify the buy and sell prices using the format `B buy_price:S sell_price`.
+     - Example: `B 10:S 5` means buying at 10 units and selling at 5 units.
+   - **Line 4**: Write `?` to auto-fill the item from the chest or write the item's ID/name.
+     - Optionally, write the item's name directly on this line. You can find the name by using `/iteminfo` while holding the item.
+
+### Example Shop Setup
+
+- **Sign Text Example**:
+  - **Line 1**: (left blank)
+  - **Line 2**: `64`
+  - **Line 3**: `B 10:S 5`
+  - **Line 4**: `?` or the item name (e.g., "Diamonds or Iron_Ingot")
+
+### Resulting Shop:
+
+A player can buy 64 diamonds or 64 Iron Ingots for 10 units and sell them back for 5 units from DirewolF_ZA's shop (DirewolF_ZA created this shop).
+
+### Using the Shop
+
+- **Buying**: Right-click the sign to buy items.
+- **Selling**: Left-click the sign to sell items.
