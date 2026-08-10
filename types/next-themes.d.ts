@@ -3,5 +3,6 @@ declare module 'next-themes' {
     theme: string | undefined;
     setTheme: (theme: string) => void;
     resolvedTheme?: string;
+    themes?: string[];
   };
 }
