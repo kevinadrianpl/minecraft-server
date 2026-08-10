@@ -10,4 +10,7 @@ const siteConfig = {
   }
 }
 
+// Provide a backwards-compatible alias `social` in case components expect that
+siteConfig.social = siteConfig.socials
+
 export default siteConfig
