@@ -1,8 +1,10 @@
+import React from "react";
 import { cx } from "@/lib/utils";
 import { Prose } from "./Prose";
 
 interface NoteProps {
   emoji?: string;
+  children?: React.ReactNode;
 }
 
 export const Note: React.FC<NoteProps> = ({ emoji, children }) => {
