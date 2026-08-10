@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { Command, Sun, Moon, Code } from "react-feather";
 import { cx } from "@/lib/utils";
@@ -18,9 +18,9 @@ const THEME_MAP: { [key: string]: { label: string; icon: React.ReactNode } } = {
   },
 };
 
-export const ThemeSelect = () => {
+export const ThemeSelect: React.FC = () => {
   const [mounted, setMounted] = useState(false);
-  const { theme: activeTheme, themes, setTheme } = useTheme();
+  const { theme: activeTheme, setTheme, themes } = useTheme();
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
@@ -29,6 +29,12 @@ export const ThemeSelect = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) =>
     setTheme(e.target.value);
+
+  const themeList = Array.isArray(themes)
+    ? themes.filter((t) => Object.prototype.hasOwnProperty.call(THEME_MAP, t))
+    : Object.keys(THEME_MAP);
+
+  const current = activeTheme ?? "system";
 
   return (
     <div className="relative inline-block">
@@ -42,7 +48,7 @@ export const ThemeSelect = () => {
           "opacity-50"
         )}
       >
-        {THEME_MAP[activeTheme!].icon}
+        {THEME_MAP[current].icon}
       </span>
       <span
         aria-hidden={true}
@@ -58,9 +64,9 @@ export const ThemeSelect = () => {
           "dark:bg-gray-800 dark:border-gray-700"
         )}
         onChange={handleChange}
-        value={activeTheme}
+        value={current}
       >
-        {themes.map((theme) => {
+        {themeList.map((theme) => {
           return (
             <option key={theme} value={theme}>
               {THEME_MAP[theme].label}
