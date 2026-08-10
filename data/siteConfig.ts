@@ -6,7 +6,10 @@ const siteConfig: {
   title: string;
   siteName: string;
   description: string;
+  siteDescription: string;
   url: string;
+  siteUrl: string;
+  siteThumbnail: string;
   socials: Socials;
   social: Socials;
   avatar?: string;
@@ -15,7 +18,11 @@ const siteConfig: {
   title: 'DXRERY',
   siteName: 'DXRERY',
   description: 'DXRERY — Minecraft Wiki & Community',
+  siteDescription: 'DXRERY — Minecraft Wiki & Community',
   url: 'https://dxrery.top',
+  siteUrl: 'https://dxrery.top',
+  // default open graph thumbnail (replace if you have a better image)
+  siteThumbnail: '/assets/og.png',
   socials: {
     twitter: 'https://twitter.com/yourhandle',
     instagram: 'https://instagram.com/yourhandle',
