@@ -12,7 +12,6 @@
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "gray-matter": "^4.0.3",
-    "minecraft-server-util": "^6.1.0",
     "next": "^13.5.4",
     "next-mdx-remote": "^4.2.0",
     "postcss": "^8.4.24",
