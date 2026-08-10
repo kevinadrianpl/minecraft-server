@@ -1,3 +1,4 @@
+import React from "react";
 import Head from "next/head";
 import { onlyText } from "react-children-utilities";
 import { formatDate } from "@/lib/formatDate";
@@ -10,6 +11,7 @@ interface PageProps {
   title: string | React.ReactNode;
   description?: string | React.ReactNode;
   thumbnail?: string;
+  children?: React.ReactNode;
 }
 
 export const Page: React.FC<PageProps> = ({
