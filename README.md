@@ -7,7 +7,7 @@ This repository contains a Next.js + TypeScript + Tailwind + MDX site scaffold t
 Live deployment: (add Vercel link once deployed)
 
 Quick summary
-- Pages: Home, Store, Vote, Wiki (MDX content in /content), Rules, Map (Bluemaps embed)
+- Pages: Home, Shop, Vote, Wiki (MDX content in /content), Rules, Map (Bluemaps embed)
 - Server status widget (API route /api/mc/status uses MINECRAFT_SERVER env var)
 - Content-driven: edit wiki pages as MDX files in /content/wiki
 - Host on Vercel; point dxrery.top to the Vercel project after deployment
@@ -26,11 +26,11 @@ Getting started (local)
    npm run dev
 
 Key environment variables (see .env.example)
-- MINECRAFT_SERVER=play.dxrery.top:25565
-- BLUEMAPS_URL=https://vanilla.tvpmc.co.za:26357
-- DISCORD_INVITE=https://discord.gg/Ubx7Tvu
-- STORE_URL=https://example.com/store
-- VOTE_URL=https://example.com/vote
+- MINECRAFT_SERVER=play.dxrery.top:25565    (server-only)
+- NEXT_PUBLIC_BLUEMAPS_URL=https://vanilla.tvpmc.co.za:26357
+- NEXT_PUBLIC_DISCORD_INVITE=https://discord.gg/Ubx7Tvu
+- NEXT_PUBLIC_STORE_URL=https://example.com/store
+- NEXT_PUBLIC_VOTE_URL=https://example.com/vote
 
 Deployment (Vercel)
 1. Create a Vercel account and import this GitHub repo.

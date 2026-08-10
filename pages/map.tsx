@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 
 export default function MapPage() {
-  const bluemap = process.env.BLUEMAPS_URL || 'https://vanilla.tvpmc.co.za:26357'
+  const bluemap = process.env.NEXT_PUBLIC_BLUEMAPS_URL || 'https://vanilla.tvpmc.co.za:26357'
   return (
     <Layout>
       <div className="card">
