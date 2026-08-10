@@ -1,4 +1,12 @@
-const siteConfig = {
+type Socials = { [key: string]: string };
+
+const siteConfig: {
+  title: string;
+  description: string;
+  url: string;
+  socials: Socials;
+  social: Socials;
+} = {
   title: 'DXRERY',
   description: 'DXRERY — Minecraft Wiki & Community',
   url: 'https://dxrery.top',
@@ -7,10 +15,11 @@ const siteConfig = {
     instagram: 'https://instagram.com/yourhandle',
     github: 'https://github.com/kevinadrianpl',
     linkedin: 'https://www.linkedin.com/in/kevinadrianpl'
-  }
-}
+  },
+  // `social` exists for backwards compatibility with components that use siteConfig.social
+  social: {} as Socials
+};
 
-// Provide a backwards-compatible alias `social` in case components expect that
-siteConfig.social = siteConfig.socials
+siteConfig.social = siteConfig.socials;
 
-export default siteConfig
+export default siteConfig;
