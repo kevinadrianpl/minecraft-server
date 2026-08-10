@@ -4,15 +4,30 @@ import matter from 'gray-matter'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import Layout from '@/components/Layout'
+import { getAllPages } from '@/lib/wiki'
 
-export default function WikiPage({ source, meta }: any) {
+export default function WikiPage({ source, meta, pages }: any) {
   return (
     <Layout>
-      <div className="card">
-        <h1 className="text-2xl font-bold">{meta.title}</h1>
-        <div className="text-sm text-dxrery.muted">{meta.date}</div>
-        <div className="mt-4 prose prose-invert">
-          <MDXRemote {...source} />
+      <div className="md:flex md:gap-6">
+        <aside className="md:w-1/4 mb-6 md:mb-0">
+          <div className="card">
+            <h3 className="font-semibold">Wiki</h3>
+            <nav className="mt-3 flex flex-col gap-2">
+              {pages.map((p: any) => (
+                <a key={p.slug} href={`/wiki/${p.slug}`} className="text-sm text-dxrery.muted hover:text-dxrery.gold">{p.title}</a>
+              ))}
+            </nav>
+          </div>
+        </aside>
+        <div className="flex-1">
+          <div className="card">
+            <h1 className="text-2xl font-bold">{meta.title}</h1>
+            <div className="text-sm text-dxrery.muted">{meta.date}</div>
+            <div className="mt-4 prose prose-invert">
+              <MDXRemote {...source} />
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
@@ -31,5 +46,6 @@ export async function getStaticProps({ params }: any) {
   const source = fs.readFileSync(filePath, 'utf8')
   const { content, data } = matter(source)
   const mdxSource = await serialize(content, { scope: data })
-  return { props: { source: mdxSource, meta: data } }
+  const pages = getAllPages()
+  return { props: { source: mdxSource, meta: data, pages } }
 }
