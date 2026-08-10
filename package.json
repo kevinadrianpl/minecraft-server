@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "react-feather": "^2.0.10",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "gray-matter": "^4.0.3",
