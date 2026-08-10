@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Image from 'next/image'
 
 const products: any = {
   'starter-pack': {
@@ -41,7 +42,7 @@ export default function ProductPage({ params }: any) {
       <div className="card">
         <div className="md:flex md:gap-6">
           <div className="md:w-1/3">
-            <img src={p.img} alt={p.title} className="w-full" />
+            <Image src={p.img} alt={p.title} width={400} height={400} className="w-full" />
           </div>
           <div className="flex-1">
             <h1 className="text-2xl font-bold">{p.title}</h1>

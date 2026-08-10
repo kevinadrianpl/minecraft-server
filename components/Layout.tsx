@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
 
 type Props = { children: React.ReactNode }
 
@@ -9,7 +10,7 @@ export default function Layout({ children }: Props) {
       <header className="bg-dxrery.surface text-dxrery.text header-shadow">
         <div className="container flex items-center justify-between py-4">
           <Link href="/" className="flex items-center gap-3">
-            <img src="/assets/logo.svg" alt="DXRERY" className="h-10" />
+            <Image src="/assets/logo.svg" alt="DXRERY" width={40} height={40} />
             <div className="text-lg font-semibold">DXRERY</div>
           </Link>
           <nav className="hidden md:flex gap-6 items-center">

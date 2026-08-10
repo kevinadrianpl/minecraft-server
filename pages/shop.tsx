@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const products = [
   {
@@ -33,7 +34,7 @@ export default function ShopList() {
         <div className="mt-6 grid md:grid-cols-3 gap-6">
           {products.map(p => (
             <div key={p.id} className="p-4 border rounded bg-[rgba(255,255,255,0.02)] flex flex-col">
-              <img src={p.img} alt={p.title} className="h-28 mx-auto" />
+              <Image src={p.img} alt={p.title} width={112} height={112} className="mx-auto" />
               <div className="mt-4 font-semibold">{p.title}</div>
               <div className="text-sm text-dxrery.muted">{p.description}</div>
               <div className="mt-4 flex items-center justify-between mt-auto">
