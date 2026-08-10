@@ -22,7 +22,8 @@
     "react-children-utilities": "^2.0.0",
     "next-themes": "^0.2.1",
     "date-fns": "^2.30.0",
-    "clsx": "^1.2.1"
+    "clsx": "^1.2.1",
+    "@sindresorhus/slugify": "^2.1.0"
   },
   "devDependencies": {
     "eslint": "^8.50.0",
